@@ -8,15 +8,23 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Spacing="0">
-                <Label Text="Posisi Start atau flush left" HorizontalOptions="Start"/>
-                <Label Text="Posisi Center" HorizontalOptions="Center"/>
-                <Label Text="Posisi End atau flush right" HorizontalOptions="End"/>
+                <Label Text="Posisi Start atau flush left" FontSize="Large" HorizontalOptions="Start"/>
+                <Label Text="Posisi Center" FontSize="Large" HorizontalOptions="Center"/>
+                <Label Text="Posisi End atau flush right" FontSize="Large" HorizontalOptions="End"/>
             </StackLayout>
-            <StackLayout Spacing="0" Orientation="Horizontal">
-                <Label Text="Posisi Start" HorizontalOptions="Start"/>
-                <Label Text="Posisi Center" HorizontalOptions="CenterAndExpand"/>
-                <Label Text="Posisi End" HorizontalOptions="End"/>
-            </StackLayout>
+
+            <ScrollView Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Start" />
+                    <Button Text="Start" />
+                    <Button Text="Start" />
+                    <Button Text="Start" />
+                    <Button Text="Start" />
+                    <Button Text="Start" />
+                    <Button Text="Start" />
+                </StackLayout>
+            </ScrollView>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
