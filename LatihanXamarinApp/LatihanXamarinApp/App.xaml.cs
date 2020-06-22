@@ -10,7 +10,7 @@ namespace LatihanXamarinApp
         public App()
         {
             InitializeComponent();
-            MainPage = new ContohGridLayout();
+            MainPage = new ContohImageView();
         }
 
         protected override void OnStart()
