@@ -9,8 +9,7 @@ namespace LatihanXamarinApp
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            MainPage = new ContohStackLayout();
         }
 
         protected override void OnStart()

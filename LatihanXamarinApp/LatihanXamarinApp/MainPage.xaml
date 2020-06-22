@@ -11,7 +11,10 @@
         <Label Text="Selamat Datang di Xamarin Forms" 
            HorizontalOptions="Center" TextColor="Red" FontSize="Large"
            VerticalOptions="CenterAndExpand" />
-        <Label Text="Hello World !" />
+        <Label Text="Hello World !" HorizontalOptions="Center" TextColor="Red" FontSize="Large"
+           VerticalOptions="CenterAndExpand" />
+        <Label Text="Hello World !" HorizontalOptions="Center" TextColor="Red" FontSize="Large"
+           VerticalOptions="CenterAndExpand" />
     </StackLayout>
 
 </ContentPage>
