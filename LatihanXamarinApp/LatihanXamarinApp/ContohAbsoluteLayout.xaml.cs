@@ -9,6 +9,7 @@ using Xamarin.Forms.Xaml;
 
 namespace LatihanXamarinApp
 {
+    //
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ContohAbsoluteLayout : ContentPage
     {
