@@ -21,7 +21,7 @@ namespace LatihanXamarinApp
 
         private async void btnSimpleList_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ContohListString());
+            await Navigation.PushModalAsync(new ContohListString());
         }
 
         private async void btnBindingList_Clicked(object sender, EventArgs e)
@@ -51,7 +51,11 @@ namespace LatihanXamarinApp
 
         private async void menuCall_Clicked(object sender, EventArgs e)
         {
-            await DisplayAlert("Keterangan", "Phone Call", "OK");
+            var result = await DisplayAlert("Keterangan", "Phone Call", "Yes","No");
+            if (result)
+                await DisplayAlert("Ket", "Anda menjawab Yes","OK");
+            else
+                await DisplayAlert("Ket", "Anda menjawab No","OK");
         }
     }
 }
