@@ -25,9 +25,9 @@
                                        Grid.Column="0" Grid.RowSpan="3"
                                        VerticalOptions="Center" HorizontalOptions="Center" />
                                 <Label FontSize="Medium" Text="{Binding Title}" Grid.Column="1" 
-                                       Grid.Row="0" TextColor="Blue" VerticalOptions="Center" HorizontalOptions="Start" />
-                                <Label Text="{Binding Description}" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" />
-                                <Label Text="{Binding Price,StringFormat='Harga: ${0:N}'}" Grid.Row="2" Grid.Column="1" TextColor="Red" VerticalOptions="Center" HorizontalOptions="Start" />
+                                       Grid.Row="0" TextColor="Blue" VerticalOptions="Center" />
+                                <Label Text="{Binding Description}" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" />
+                                <Label Text="{Binding Price,StringFormat='Harga: ${0:N}'}" Grid.Row="2" Grid.Column="1" TextColor="Red" VerticalOptions="Center" />
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
