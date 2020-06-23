@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace LatihanXamarinApp
@@ -63,6 +64,18 @@ namespace LatihanXamarinApp
             var action = await DisplayActionSheet("Save Photo?", "Cancel", null, 
                 "Photo Roll", "Email");
             await DisplayAlert("Keterangan", $"Anda memilih: {action}", "OK");
+        }
+
+        private async void btnPreference_Clicked(object sender, EventArgs e)
+        {
+            Preferences.Set("language", entryLanguage.Text);
+            await DisplayAlert("Keterangan", $"Preference {entryLanguage.Text} sudah dibuat", "OK");
+        }
+
+        private async void btnAmbilPreference_Clicked(object sender, EventArgs e)
+        {
+            var data = Preferences.Get("language","");
+            await DisplayAlert("Keterangan", $"Preferences: {data}", "OK");
         }
     }
 }
