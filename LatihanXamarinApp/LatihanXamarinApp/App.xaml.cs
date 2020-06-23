@@ -10,6 +10,9 @@ namespace LatihanXamarinApp
         public App()
         {
             InitializeComponent();
+
+            Application.Current.Properties["tempdata"] = string.Empty;
+
             MainPage = new NavigationPage(new MainPage());
         }
 

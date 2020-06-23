@@ -15,8 +15,11 @@ namespace LatihanXamarinApp
         public ContohAmbilInput()
         {
             InitializeComponent();
+
+            var data = Application.Current.Properties["tempdata"].ToString();
+            lblInput.Text = $"Input dari form lain {data}";
         }
-       
+        
         //overloading constructor
         public ContohAmbilInput(string nama)
         {

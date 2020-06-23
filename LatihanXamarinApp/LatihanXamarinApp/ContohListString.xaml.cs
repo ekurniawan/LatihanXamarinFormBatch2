@@ -29,7 +29,8 @@ namespace LatihanXamarinApp
         private async void lvData_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             string nama = e.Item.ToString();
-            ContohAmbilInput formContohAmbilInput = new ContohAmbilInput(nama);
+            Application.Current.Properties["tempdata"] = nama;
+            ContohAmbilInput formContohAmbilInput = new ContohAmbilInput();
             await Navigation.PushAsync(formContohAmbilInput);
             //await DisplayAlert("Keterangan", $"Anda memilih nama: {nama}","OK");
         }
