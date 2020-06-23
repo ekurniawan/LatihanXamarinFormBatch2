@@ -29,14 +29,14 @@ namespace LatihanXamarinApp
         private async void lvData_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             string nama = e.Item.ToString();
-            await DisplayAlert("Keterangan", $"Anda memilih nama: {nama}","OK");
-
-
+            ContohAmbilInput formContohAmbilInput = new ContohAmbilInput(nama);
+            await Navigation.PushAsync(formContohAmbilInput);
+            //await DisplayAlert("Keterangan", $"Anda memilih nama: {nama}","OK");
         }
 
         private async void btnMainMenu_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PopModalAsync();
+            await Navigation.PopAsync();
         }
     }
 }

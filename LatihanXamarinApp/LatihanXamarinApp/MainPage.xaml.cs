@@ -21,7 +21,7 @@ namespace LatihanXamarinApp
 
         private async void btnSimpleList_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new ContohListString());
+            await Navigation.PushAsync(new ContohListString());
         }
 
         private async void btnBindingList_Clicked(object sender, EventArgs e)
