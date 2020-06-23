@@ -23,6 +23,8 @@
                 Clicked="btnBindingList_Clicked" />
         <Button x:Name="btnImageList" Text="Image List" 
                 Clicked="btnImageList_Clicked" />
+        <Button x:Name="btnActionSheet" Text="Action Sheet" 
+                Clicked="btnActionSheet_Clicked" />
     </StackLayout>
 
 </ContentPage>

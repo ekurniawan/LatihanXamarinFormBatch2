@@ -57,5 +57,12 @@ namespace LatihanXamarinApp
             else
                 await DisplayAlert("Ket", "Anda menjawab No","OK");
         }
+
+        private async void btnActionSheet_Clicked(object sender, EventArgs e)
+        {
+            var action = await DisplayActionSheet("Save Photo?", "Cancel", null, 
+                "Photo Roll", "Email");
+            await DisplayAlert("Keterangan", $"Anda memilih: {action}", "OK");
+        }
     }
 }
