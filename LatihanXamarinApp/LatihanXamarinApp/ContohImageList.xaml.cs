@@ -29,5 +29,11 @@ namespace LatihanXamarinApp
 
             lvImage.ItemsSource = lstItems;
         }
+
+        private async void lvImage_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            ListItem data = (ListItem)e.Item;
+            await DisplayAlert("Keterangan", $"Anda memilih: {data.Title}", "OK");
+        }
     }
 }

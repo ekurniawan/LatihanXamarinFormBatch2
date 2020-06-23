@@ -5,7 +5,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" Title="Main Page"
              x:Class="LatihanXamarinApp.MainPage">
-
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="menuAbsolut" Text="Contoh Absolut" 
+                     Order="Secondary" Clicked="menuAbsolut_Clicked" />
+        <ToolbarItem x:Name="menuGrid" Text="Contoh Grid" 
+                     Order="Secondary" Clicked="menuGrid_Clicked" />
+        <ToolbarItem x:Name="menuCalc" Text="Simple Calc" 
+                     Order="Secondary" Clicked="menuCalc_Clicked" />
+    </ContentPage.ToolbarItems>
     <StackLayout>
         <!-- Place new controls here -->
         <Button x:Name="btnSimpleList" Text="Simple List" 

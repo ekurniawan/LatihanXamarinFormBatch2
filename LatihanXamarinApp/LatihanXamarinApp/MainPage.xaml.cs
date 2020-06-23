@@ -33,5 +33,20 @@ namespace LatihanXamarinApp
         {
             await Navigation.PushAsync(new ContohImageList());
         }
+
+        private async void menuAbsolut_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ContohAbsoluteLayout());
+        }
+
+        private async void menuGrid_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ContohGridLayout());
+        }
+
+        private async void menuCalc_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ContohStackLayout());
+        }
     }
 }

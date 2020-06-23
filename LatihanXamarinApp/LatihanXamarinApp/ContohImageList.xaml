@@ -7,7 +7,7 @@
              x:Class="LatihanXamarinApp.ContohImageList">
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="lvImage">
+            <ListView x:Name="lvImage" ItemTapped="lvImage_ItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ImageCell ImageSource="{Binding Source}" 
