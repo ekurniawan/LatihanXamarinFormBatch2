@@ -7,10 +7,11 @@
              x:Class="LatihanXamarinApp.ContohBindingModelList">
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="lvData">
+            <ListView x:Name="lvData" ItemTapped="lvData_ItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Title}" Detail="{Binding Description}"
+                        <TextCell Text="{Binding Title}" TextColor="Blue" 
+                                  Detail="{Binding Description}"
                                  DetailColor="Red" />
                     </DataTemplate>
                 </ListView.ItemTemplate>

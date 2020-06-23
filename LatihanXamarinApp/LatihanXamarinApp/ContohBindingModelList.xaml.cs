@@ -26,5 +26,11 @@ namespace LatihanXamarinApp
 
             lvData.ItemsSource = lstItems;
         }
+
+        private async void lvData_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            ListItem data = (ListItem)e.Item;
+            await DisplayAlert("Keterangan", $"Data yang dipilih {data.Title}", "OK");
+        }
     }
 }
