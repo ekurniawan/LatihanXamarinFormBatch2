@@ -6,6 +6,8 @@
              mc:Ignorable="d" Title="Main Page"
              x:Class="LatihanXamarinApp.MainPage">
     <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="menuCall" Text="Pnone Call" Order="Primary" 
+                     IconImageSource="phonecall.png" Clicked="menuCall_Clicked" />
         <ToolbarItem x:Name="menuAbsolut" Text="Contoh Absolut" 
                      Order="Secondary" Clicked="menuAbsolut_Clicked" />
         <ToolbarItem x:Name="menuGrid" Text="Contoh Grid" 

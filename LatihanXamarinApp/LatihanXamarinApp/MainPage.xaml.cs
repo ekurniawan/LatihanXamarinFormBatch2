@@ -48,5 +48,10 @@ namespace LatihanXamarinApp
         {
             await Navigation.PushAsync(new ContohStackLayout());
         }
+
+        private async void menuCall_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Keterangan", "Phone Call", "OK");
+        }
     }
 }
