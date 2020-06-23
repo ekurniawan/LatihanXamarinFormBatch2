@@ -11,8 +11,8 @@ namespace LatihanXamarinApp
         {
             InitializeComponent();
 
+            //untuk menyimpan data yg bisa diakses oleh semua forms
             Application.Current.Properties["tempdata"] = string.Empty;
-
             MainPage = new NavigationPage(new MainPage());
         }
 
