@@ -23,13 +23,15 @@ namespace LatihanXamarinApp
                 "Bambang"
             };
             lvData.ItemsSource = items;
-
         }
 
-        private void lvData_ItemTapped(object sender, ItemTappedEventArgs e)
+
+        private async void lvData_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             string nama = e.Item.ToString();
-            DisplayAlert("Keterangan", $"Anda memilih nama: {nama}","OK");
+            await DisplayAlert("Keterangan", $"Anda memilih nama: {nama}","OK");
+
+
         }
     }
 }
