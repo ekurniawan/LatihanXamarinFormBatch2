@@ -10,7 +10,7 @@ namespace LatihanXamarinApp
         public App()
         {
             InitializeComponent();
-            MainPage = new ContohBindingModelList();
+            MainPage = new ContohImageList();
         }
 
         protected override void OnStart()
