@@ -18,5 +18,20 @@ namespace LatihanXamarinApp
         {
             InitializeComponent();
         }
+
+        private async void btnSimpleList_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ContohListString());
+        }
+
+        private async void btnBindingList_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ContohBindingModelList());
+        }
+
+        private async void btnImageList_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ContohImageList());
+        }
     }
 }
