@@ -8,6 +8,7 @@
     <ContentPage.Content>
         <StackLayout>
             <ListView x:Name="lvData" ItemTapped="lvData_ItemTapped" />
+            <Button x:Name="btnMainMenu" Text="Main Menu" Clicked="btnMainMenu_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

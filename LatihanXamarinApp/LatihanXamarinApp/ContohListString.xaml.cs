@@ -33,5 +33,10 @@ namespace LatihanXamarinApp
 
 
         }
+
+        private async void btnMainMenu_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
     }
 }
