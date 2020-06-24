@@ -29,5 +29,20 @@ namespace LatihanXamarinApp.DAL
             //var results = conn.Table<Employee>().OrderBy(e => e.EmpName).ToList();
             return results.ToList();
         }
+
+        public int InsertEmployee(Employee employee)
+        {
+            return conn.Insert(employee);
+        }
+
+        public int EditEmployee(Employee employee)
+        {
+            return conn.Update(employee);
+        }
+
+        public int DeleteEmployee(Employee employee)
+        {
+            return conn.Delete(employee);
+        }
     }
 }
