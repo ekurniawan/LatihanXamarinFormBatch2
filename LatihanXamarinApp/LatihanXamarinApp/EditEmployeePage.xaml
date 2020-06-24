@@ -47,8 +47,8 @@
                    Grid.Column="1" Grid.Row="5" VerticalTextAlignment="Center" />
             <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="6"
                          Grid.ColumnSpan="3">
-                <Button x:Name="btnSave" Text="Save" />
-                <Button x:Name="btnDelete" Text="Delete" />
+                <Button x:Name="btnSave" Text="Edit" Clicked="btnSave_Clicked" />
+                <Button x:Name="btnDelete" Text="Delete" Clicked="btnDelete_Clicked" />
             </StackLayout>
         </Grid>
     </ContentPage.Content>
