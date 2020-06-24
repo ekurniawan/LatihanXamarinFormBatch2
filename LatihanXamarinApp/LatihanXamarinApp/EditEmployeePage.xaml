@@ -14,6 +14,7 @@
                 <RowDefinition Height="50" />
                 <RowDefinition Height="50" />
                 <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
@@ -44,8 +45,12 @@
                    VerticalTextAlignment="Center" Grid.Column="0" Grid.Row="5" />
             <Entry x:Name="entryQualification" Text="{Binding Qualification}"
                    Grid.Column="1" Grid.Row="5" VerticalTextAlignment="Center" />
+            <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="6"
+                         Grid.ColumnSpan="3">
+                <Button x:Name="btnSave" Text="Save" />
+                <Button x:Name="btnDelete" Text="Delete" />
+            </StackLayout>
 
-            
         </Grid>
     </ContentPage.Content>
 </ContentPage>
