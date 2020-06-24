@@ -16,5 +16,16 @@ namespace LatihanXamarinApp
         {
             InitializeComponent();
         }
+
+        protected override void OnAppearing()
+        {
+            var results = App.DbAccess.GetAllEmployee();
+            lvEmployee.ItemsSource = results;
+        }
+
+        private void btnAddEmployee_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

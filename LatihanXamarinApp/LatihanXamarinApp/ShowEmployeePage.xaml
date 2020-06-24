@@ -15,10 +15,10 @@
                             <RowDefinition Height="50" />
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto" />
-                            <ColumnDefinition Width="Auto" />
-                            <ColumnDefinition Width="Auto" />
-                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="20" />
+                            <ColumnDefinition Width="100" />
+                            <ColumnDefinition Width="80" />
+                            <ColumnDefinition Width="100" />
                         </Grid.ColumnDefinitions>
                         <Label Text="EMPLOYEE DATA" FontAttributes="Bold" FontSize="Subtitle"
                                VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Column="0" 
@@ -41,10 +41,10 @@
                                     <RowDefinition Height="50" />
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="20" />
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="80" />
+                                    <ColumnDefinition Width="100" />
                                 </Grid.ColumnDefinitions>
                                 <Label Text="{Binding EmpId}" 
                                VerticalTextAlignment="Center" Grid.Column="0" Grid.Row="0" />
@@ -60,7 +60,7 @@
                 </ListView.ItemTemplate>
                 <ListView.Footer>
                     <StackLayout Orientation="Horizontal" Padding="5,5,5,5">
-                        <Button Text="Add Employee" />
+                        <Button x:Name="btnAddEmployee" Text="Add Employee" Clicked="btnAddEmployee_Clicked" />
                     </StackLayout>
                 </ListView.Footer>
             </ListView>
