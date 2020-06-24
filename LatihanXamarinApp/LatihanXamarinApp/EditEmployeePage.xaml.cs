@@ -40,9 +40,21 @@ namespace LatihanXamarinApp
             }
         }
 
-        private void btnDelete_Clicked(object sender, EventArgs e)
+        private async void btnDelete_Clicked(object sender, EventArgs e)
         {
+            var delEmployee = new Employee
+            {
+                EmpId = Convert.ToInt64(entryID.Text)
+            };
 
+            var result = await DisplayAlert("Konfirmasi",
+                $"Apakah anda yakin akan delete data?", "Yes", "No");
+            if (result)
+            {
+                App.DbAccess.DeleteEmployee(delEmployee);
+                await DisplayAlert("Keterangan", "Data berhasil didelete", "OK");
+                await Navigation.PopAsync();
+            }
         }
     }
 }
