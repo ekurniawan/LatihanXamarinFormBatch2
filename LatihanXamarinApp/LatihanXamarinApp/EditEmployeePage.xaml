@@ -50,7 +50,6 @@
                 <Button x:Name="btnSave" Text="Save" />
                 <Button x:Name="btnDelete" Text="Delete" />
             </StackLayout>
-
         </Grid>
     </ContentPage.Content>
 </ContentPage>
