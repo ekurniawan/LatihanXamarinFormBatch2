@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LatihanXamarinApp.DAL;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -6,6 +7,18 @@ namespace LatihanXamarinApp
 {
     public partial class App : Application
     {
+        //singleton pattern
+        private static DataAccess dbAccess;
+        public static DataAccess DbAccess
+        {
+            get
+            {
+                if (dbAccess == null)
+                    dbAccess = new DataAccess();
+                return dbAccess;
+            }
+        }
+
         //
         public App()
         {

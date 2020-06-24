@@ -1,4 +1,5 @@
-﻿using LatihanXamarinApp.Models;
+﻿
+using LatihanXamarinApp.Models;
 using SQLite;
 using System;
 using System.Collections.Generic;
