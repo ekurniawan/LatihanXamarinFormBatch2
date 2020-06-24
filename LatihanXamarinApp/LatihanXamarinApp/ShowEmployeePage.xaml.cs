@@ -23,9 +23,9 @@ namespace LatihanXamarinApp
             lvEmployee.ItemsSource = results;
         }
 
-        private void btnAddEmployee_Clicked(object sender, EventArgs e)
+        private async void btnAddEmployee_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new AddEmployeePage());
         }
     }
 }

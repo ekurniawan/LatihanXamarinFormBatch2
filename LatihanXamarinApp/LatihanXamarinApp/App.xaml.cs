@@ -28,7 +28,7 @@ namespace LatihanXamarinApp
             Application.Current.Properties["tempdata"] = string.Empty;
             //MainPage = new NavigationPage(new MainPage());
             //MainPage = new MyMasterDetailPage();
-            MainPage = new ShowEmployeePage();
+            MainPage = new NavigationPage(new ShowEmployeePage());
         }
 
         protected override void OnStart()

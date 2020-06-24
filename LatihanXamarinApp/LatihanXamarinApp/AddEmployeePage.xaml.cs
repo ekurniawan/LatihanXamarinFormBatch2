@@ -34,6 +34,7 @@ namespace LatihanXamarinApp
                 App.DbAccess.InsertEmployee(newEmployee);
                 await DisplayAlert("Keterangan",
                     $"Data Employee {newEmployee.EmpName} berhasil ditambah", "OK");
+                await Navigation.PopAsync();
             }
             catch (Exception ex)
             {
