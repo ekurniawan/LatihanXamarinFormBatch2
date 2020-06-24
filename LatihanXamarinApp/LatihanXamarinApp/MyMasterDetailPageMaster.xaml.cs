@@ -33,11 +33,11 @@ namespace LatihanXamarinApp
             {
                 MenuItems = new ObservableCollection<MyMasterDetailPageMasterMenuItem>(new[]
                 {
-                    new MyMasterDetailPageMasterMenuItem { Id = 0, Title = "Home", TargetType=typeof(MainPage) },
-                    new MyMasterDetailPageMasterMenuItem { Id = 1, Title = "Simple Calc",TargetType=typeof(ContohGridLayout) },
-                    new MyMasterDetailPageMasterMenuItem { Id = 2, Title = "Image List",TargetType=typeof(ContohImageList) },
-                    new MyMasterDetailPageMasterMenuItem { Id = 3, Title = "Contoh Tab",TargetType=typeof(MyTabbedPage) },
-                    new MyMasterDetailPageMasterMenuItem { Id = 4, Title = "Custom List",TargetType=typeof(ContohCustomList) },
+                    new MyMasterDetailPageMasterMenuItem { Id = 0, Title = "Home", TargetType=typeof(MainPage),Source="phonecall.png" },
+                    new MyMasterDetailPageMasterMenuItem { Id = 1, Title = "Simple Calc",TargetType=typeof(ContohGridLayout),Source="monkey2.png" },
+                    new MyMasterDetailPageMasterMenuItem { Id = 2, Title = "Image List",TargetType=typeof(ContohImageList),Source="phonecall.png" },
+                    new MyMasterDetailPageMasterMenuItem { Id = 3, Title = "Contoh Tab",TargetType=typeof(MyTabbedPage),Source="monkey3.png" },
+                    new MyMasterDetailPageMasterMenuItem { Id = 4, Title = "Custom List",TargetType=typeof(ContohCustomList),Source="phonecall.png" },
                 });
             }
 
