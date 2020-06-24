@@ -28,7 +28,6 @@ namespace LatihanXamarinApp
         class MyMasterDetailPageMasterViewModel : INotifyPropertyChanged
         {
             public ObservableCollection<MyMasterDetailPageMasterMenuItem> MenuItems { get; set; }
-
             public MyMasterDetailPageMasterViewModel()
             {
                 MenuItems = new ObservableCollection<MyMasterDetailPageMasterMenuItem>(new[]
