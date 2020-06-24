@@ -27,5 +27,10 @@ namespace LatihanXamarinApp
         {
             await Navigation.PushAsync(new AddEmployeePage());
         }
+
+        private void lvEmployee_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+
+        }
     }
 }
