@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LatihanXamarinApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,9 +29,12 @@ namespace LatihanXamarinApp
             await Navigation.PushAsync(new AddEmployeePage());
         }
 
-        private void lvEmployee_ItemTapped(object sender, ItemTappedEventArgs e)
+        private async void lvEmployee_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-
+            var editEmployee = (Employee)e.Item;
+            var formEdit = new EditEmployeePage();
+            formEdit.BindingContext = editEmployee;
+            await Navigation.PushAsync(formEdit);
         }
     }
 }

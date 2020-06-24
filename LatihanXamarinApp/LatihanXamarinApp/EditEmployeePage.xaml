@@ -19,7 +19,7 @@
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="110" />
-                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="200*" />
             </Grid.ColumnDefinitions>
 
             <Label Text="EDIT EMPLOYEE" FontSize="Medium" FontAttributes="Bold"
