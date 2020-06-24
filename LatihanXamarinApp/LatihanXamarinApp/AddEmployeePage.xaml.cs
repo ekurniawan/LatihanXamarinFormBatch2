@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LatihanXamarinApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,28 @@ namespace LatihanXamarinApp
         public AddEmployeePage()
         {
             InitializeComponent();
+        }
+
+        private async void btnTambah_Clicked(object sender, EventArgs e)
+        {
+            var newEmployee = new Employee
+            {
+                EmpName = entryName.Text,
+                Designation = entryDesignation.Text,
+                Department = entryDepartment.Text,
+                Qualification = entryQualification.Text
+            };
+
+            try
+            {
+                App.DbAccess.InsertEmployee(newEmployee);
+                await DisplayAlert("Keterangan",
+                    $"Data Employee {newEmployee.EmpName} berhasil ditambah", "OK");
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Error", ex.Message, "OK");
+            }
         }
     }
 }

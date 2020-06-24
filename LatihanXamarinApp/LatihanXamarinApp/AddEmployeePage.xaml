@@ -41,7 +41,8 @@
             <Entry x:Name="entryQualification" Placeholder="insert qualification"
                    Grid.Column="1" Grid.Row="4" VerticalTextAlignment="Center" />
 
-            <Button Text="Tambah" Grid.Row="5" Grid.Column="1" />
+            <Button x:Name="btnTambah" Text="Tambah" Grid.Row="5" Grid.Column="1" 
+                    Clicked="btnTambah_Clicked"/>
 
         </Grid>
     </ContentPage.Content>
