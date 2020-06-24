@@ -43,7 +43,6 @@
 
             <Button x:Name="btnTambah" Text="Tambah" Grid.Row="5" Grid.Column="1" 
                     Clicked="btnTambah_Clicked"/>
-
         </Grid>
     </ContentPage.Content>
 </ContentPage>
